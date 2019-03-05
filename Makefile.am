@@ -12,10 +12,10 @@ endif
 if CONFIG_KERNEL
 SUBDIRS += module
 
-extradir = @prefix@/src/spl-$(VERSION)
+extradir = @prefix@/libexec/spl
 extra_HEADERS = spl.release.in spl_config.h.in
 
-kerneldir = @prefix@/src/spl-$(VERSION)/$(LINUX_VERSION)
+kerneldir = @prefix@/libexec/spl/$(LINUX_VERSION)
 nodist_kernel_HEADERS = spl.release spl_config.h module/$(LINUX_SYMBOLS)
 endif
 

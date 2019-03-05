@@ -18,6 +18,6 @@ USER_H =
 EXTRA_DIST = $(COMMON_H) $(KERNEL_H) $(USER_H)
 
 if CONFIG_KERNEL
-kerneldir = @prefix@/src/spl-$(VERSION)/include/linux
+kerneldir = @prefix@/libexec/spl/include/linux
 kernel_HEADERS = $(KERNEL_H)
 endif
